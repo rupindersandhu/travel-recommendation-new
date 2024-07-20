@@ -1,0 +1,210 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;   
+    font-family: sans-serif;
+    background: url('./images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 20px 10px;
+    font-size: 1.2rem;
+    i {
+        width: 2rem;
+        margin-right: 10px;
+    }
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,0,1));
+
+    > * {
+        width: 33.33%;
+        margin: 0 10px;
+    }
+
+    .navLinks {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 0 10px;
+        cursor: pointer;
+    }
+
+    #searchBox {
+        display: flex;
+        justify-content: flex-end;
+
+        > * {
+            margin-left: 10px;
+        }
+        input {
+            flex-grow: 2;
+            font-size: 1rem;
+            border-radius: 5px;
+            padding: 10px;
+            background: none;
+            color: white;
+            border-style: solid;
+        }
+        button {
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-style: solid;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+#container
+{
+    height: 100%;
+    display: flex;
+}
+
+#quickLink {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    max-width: 200px;
+    a {
+        margin: 1em auto;
+    }
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+#searchList {
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+}
+
+#quickLink::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 50%;
+    margin: 50% auto;
+    background-color: black;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    opacity: 0.7;
+    border-radius: 10px;
+    margin-top: 20%;
+    
+    h1 {
+        font-size: 3em;
+        padding: 0 20px;
+    }
+    p {
+        width: 80%;
+        padding: 0 20px;
+        font-size: 1.3em;
+    }
+    button {
+        font-size: 1.3em;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 20%;
+        padding: 0 20px;
+        margin-left: 20px;
+    }
+}
+
+.card {
+    display: flex;
+    align-self: end;
+    flex-direction: column;
+    align-items: start;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
+    img {
+        width: 100%;
+        max-height: 300px;
+        aspect-ratio: 16/9;
+    }
+    h3 {
+        padding: 0 20px;
+    }
+    p {
+        width: 80%;
+        color: goldenrod;
+        border-radius: 10px;
+        font-size: 1em;
+        margin: 0 20px;
+    }
+    button {
+        border-radius: 10px;
+        background-color: rgba(0, 255, 255, 0.5);
+        border-color: rgba(0, 255, 255, 0.9);
+        cursor: pointer;
+        width: 20%;
+        min-width: 100px;
+        margin: 20px;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: goldenrod;
+    border-radius: 10px;
+    font-size: 1em;
+    padding: 20px;
+    margin-left: 20px;
+    
+    label {
+        font-size: 1.6rem;
+    }
+    
+    input {
+        padding: 10px;
+        background: none;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        color: white;
+        border-style: solid;
+    } 
+    
+    textarea {
+        padding: 10px;
+        background: none;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        color: white;
+    }
+
+    button {
+        border-radius: 5px !important;
+        background-color: rgba(0, 255, 255, 0.5);
+        border-color: rgba(0, 255, 255, 0.9);
+        cursor: pointer;
+        margin: 20px 0 0 0 !important;
+    }
+}
